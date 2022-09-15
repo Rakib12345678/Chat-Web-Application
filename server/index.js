@@ -1,11 +1,12 @@
-const express=require("express");
-const cors=require("cors");
+const express=require("express");//it framework for node js
+const cors=require("cors");//cross origin resource sharing refers to the method that allows you to make requests to th eserver deployed at a different domain.as a reference if fronted and backend are at two different domains ,se need cors
+
 const mongoose=require("mongoose");
 const app=express();
 const authRoutes = require("./routes/auth");
 const messageRoutes = require("./routes/messagesRoute");
 const socket = require("socket.io");
-require("dotenv").config();
+require("dotenv").config();//Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env. 
 app.use(cors());
 app.use(express.json());
 

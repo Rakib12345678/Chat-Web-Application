@@ -51,10 +51,10 @@ import "react-toastify/dist/ReactToastify.css";
   
        }
 
-       else
-       {
-        alert("password is not correct");
-       }
+      //  else
+      //  {
+      //   alert("password is not correct");
+      //  }
     }
 
     const [values, setValues] = useState({
